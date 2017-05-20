@@ -1,0 +1,15 @@
+name: mstdn
+version: '0.2.5'
+summary: Tiny web-based mastodon client for your desktop
+description: |
+  Mstdn is a desktop application based on mobile version Mastodon page and
+  Electron framework. It basically uses Mastodon's mobile page and provides
+  various desktop application features (such as desktop notification, keybinds,
+  multi-account support).
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+parts:
+  mstdn:
+    command: bin/open-mstdn-app
