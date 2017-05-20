@@ -10,6 +10,14 @@ description: |
 grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: devmode # use 'strict' once you have the right plugs and slots
 
-parts:
+apps:
   mstdn:
     command: bin/open-mstdn-app
+
+
+parts:
+  mstdn:
+    plugin: nodejs
+    node-packages:
+      - mstdn
+
